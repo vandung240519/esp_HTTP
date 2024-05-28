@@ -1,0 +1,87 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818da: panic_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x40089f59: esp_system_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x40091909: __assert_func at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/assert.c:81
+0x4008f8e8: block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+0x4008f2ad: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d5: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x40082130: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x40082165: heap_caps_malloc_default at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:228
+0x40091919: malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/heap.c:24
+0x400e2071: mem_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/mem.c:209
+0x400f1851: sys_thread_sem_init at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:520
+0x400f18bd: sys_thread_sem_get at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:495
+0x400f2065: netconn_gethostbyname_addrtype at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:1316
+0x400dfa59: lwip_getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/netdb.c:345
+0x400d6d8c: getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:48
+0x400d7051: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:161
+0x4008ab21: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008f914: remove_free_block at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:333
+ (inlined by) block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4008f911: remove_free_block at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:331 (discriminator 1)
+ (inlined by) block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+0x4008f2ad: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d5: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x40082130: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x40082165: heap_caps_malloc_default at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:228
+0x40091919: malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/heap.c:24
+0x400e2071: mem_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/mem.c:209
+0x400f1851: sys_thread_sem_init at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:520
+0x400f18bd: sys_thread_sem_get at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:495
+0x400f2065: netconn_gethostbyname_addrtype at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:1316
+0x400dfa59: lwip_getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/netdb.c:345
+0x400d6d8c: getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:48
+0x400d7051: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:161
+0x4008ab21: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008f912: remove_free_block at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:332
+ (inlined by) block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4008f90f: remove_free_block at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:331 (discriminator 1)
+ (inlined by) block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+0x4008f2ad: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d5: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x40082130: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x40082165: heap_caps_malloc_default at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:228
+0x40091919: malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/heap.c:24
+0x400e2071: mem_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/mem.c:209
+0x400f1851: sys_thread_sem_init at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:520
+0x400f18bd: sys_thread_sem_get at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:495
+0x400f2065: netconn_gethostbyname_addrtype at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:1316
+0x400dfa59: lwip_getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/netdb.c:345
+0x400d6d8c: getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:48
+0x400d7051: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:161
+0x4008ab21: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,852 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  98d0199e7...[0m
+[0;32mI (448) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (475) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (4395) wifi:state: auth -> init (200)
+I (4395) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (4395) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (6815) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (9225) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (9235) wifi:state: init -> auth (b0)
+I (10235) wifi:state: auth -> init (200)
+I (10235) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (10235) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12655) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (15065) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (15065) wifi:state: init -> auth (b0)
+I (15125) wifi:state: auth -> assoc (0)
+I (15135) wifi:state: assoc -> run (10)
+I (15155) wifi:connected with ESP, aid = 9, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (15155) wifi:security: WPA2-PSK, phy: bgn, rssi: -24
+I (15155) wifi:pm start, type: 1
+
+I (15165) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (15235) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (16175) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16175) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (16545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (16545) example_common: Connected to example_netif_sta[0m
+[0;32mI (16555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (16555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (16575) UART_HTTP: *************************[0m
+[0;31mE (16575) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (16585) main_task: Returned from app_main()[0m
+[0;31mE (17575) UART_HTTP: *************************[0m
+[0;32mI (18575) UART_HTTP: Received: cc:47:40:01:35:46WZ�%M���)�A��jɣ%$�_�J��1�� ��0�F��Kqk��P��:a��k���?!34o�R3�V�X7���.:�=�~Z`��<B����ۋ�˪���"��6ڟ70��m�o��؜fr띲�H��.�IеA�奉)��Q���7��Ã�S>�l;��������R��	`�ˊ�T�e:�ޅh����ڜ�l�+�X�����C�m���Z��\����#a��٢�����p @�֢�@,��;�$G���%|ʌ紉�˴V�xgo�g����?�����Ch���26u��J�3/�I�?H��s<�������>��^I�8���^K��I��?[0m
+[0;31mE (18595) UART_HTTP: ReqGuru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008f914  PS      : 0x00060d33  A0      : 0x8008f2b0  A1      : 0x3ffb93c0  
+A2      : 0x3ffafdf8  A3      : 0x0000000c  A4      : 0xb33fffff  A5      : 0x00060723  
+A6      : 0x3ffb2680  A7      : 0x3ffae6f4  A8      : 0x00000003  A9      : 0xea6f1567  
+A10     : 0x00000000  A11     : 0x788456b4  A12     : 0x00000008  A13     : 0x3ffae718  
+A14     : 0x3ffb2680  A15     : 0x0000cdcd  SAR     : 0x0000001d  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0xea6f156f  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4008f911:0x3ffb93c0 0x4008f2ad:0x3ffb93e0 0x400820d5:0x3ffb9400 0x40082130:0x3ffb9420 0x40082165:0x3ffb9440 0x40091919:0x3ffb9460 0x40085119:0x3ffb9480 0x4011725b:0x3ffb94a0 0x4011f86b:0x3ffb94c0 0x4011d015:0x3ffb94e0 0x400d4ed9:0x3ffb9500 0x400d4f21:0x3ffb9530 0x4008ab21:0x3ffb9550
+
+
+
+
+ELF file SHA256: 98d0199e7
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  98d0199e7...[0m
+[0;32mI (447) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3405) wifi:state: auth -> assoc (0)
+I (3405) wifi:state: assoc -> run (10)
+I (3425) wifi:connected with ESP, aid = 10, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3425) wifi:security: WPA2-PSK, phy: bgn, rssi: -24
+I (3425) wifi:pm start, type: 1
+
+I (3425) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3495) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5935) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (5935) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (5945) example_common: Connected to example_netif_sta[0m
+[0;32mI (5945) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (5955) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (5965) UART_HTTP: *************************[0m
+[0;31mE (5965) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (5975) main_task: Returned from app_main()[0m
+[0;31mE (6965) UART_HTTP: *************************[0m
+[0;31mE (7965) UART_HTTP: *************************[0m
+[0;31mE (8965) UART_HTTP: *************************[0m
+[0;31mE (9965) UART_HTTP: *************************[0m
+[0;31mE (10965) UART_HTTP: *************************[0m
+I (11895) wifi:<ba-add>idx:0 (ifx:0, f6:a4:75:d3:08:a6), tid:0, ssn:7, winSize:64
+[0;31mE (11965) UART_HTTP: *************************[0m
+[0;31mE (12965) UART_HTTP: *************************[0m
+[0;31mE (13965) UART_HTTP: *************************[0m
+[0;31mE (14965) UART_HTTP: *************************[0m
+[0;31mE (15965) UART_HTTP: *************************[0m
+[0;31mE (16965) UART_HTTP: *************************[0m
+[0;31mE (17965) UART_HTTP: *************************[0m
+[0;31mE (18965) UART_HTTP: *************************[0m
+[0;31mE (19965) UART_HTTP: *************************[0m
+[0;31mE (20965) UART_HTTP: *************************[0m
+[0;31mE (21965) UART_HTTP: *************************[0m
+[0;31mE (22965) UART_HTTP: *************************[0m
+[0;31mE (23965) UART_HTTP: *************************[0m
+[0;31mE (24965) UART_HTTP: *************************[0m
+[0;31mE (25965) UART_HTTP: *************************[0m
+[0;31mE (26965) UART_HTTP: *************************[0m
+[0;31mE (27965) UART_HTTP: *************************[0m
+[0;31mE (28965) UART_HTTP: *************************[0m
+[0;31mE (29965) UART_HTTP: *************************[0m
+[0;31mE (30965) UART_HTTP: *************************[0m
+[0;31mE (31965) UART_HTTP: *************************[0m
+[0;31mE (32965) UART_HTTP: *************************[0m
+[0;31mE (33965) UART_HTTP: *************************[0m
+[0;31mE (34965) UART_HTTP: *************************[0m
+[0;31mE (35965) UART_HTTP: *************************[0m
+[0;31mE (36965) UART_HTTP: *************************[0m
+[0;31mE (37965) UART_HTTP: *************************[0m
+[0;31mE (38965) UART_HTTP: *************************[0m
+[0;31mE (39965) UART_HTTP: *************************[0m
+[0;31mE (40965) UART_HTTP: *************************[0m
+[0;31mE (41965) UART_HTTP: *************************[0m
+[0;31mE (42965) UART_HTTP: *************************[0m
+[0;31mE (43965) UART_HTTP: *************************[0m
+[0;31mE (44965) UART_HTTP: *************************[0m
+[0;31mE (45965) UART_HTTP: *************************[0m
+[0;31mE (46965) UART_HTTP: *************************[0m
+[0;31mE (47965) UART_HTTP: *************************[0m
+[0;31mE (48965) UART_HTTP: *************************[0m
+[0;31mE (49965) UART_HTTP: *************************[0m
+[0;31mE (50965) UART_HTTP: *************************[0m
+[0;31mE (51965) UART_HTTP: *************************[0m
+[0;31mE (52965) UART_HTTP: *************************[0m
+[0;31mE (53965) UART_HTTP: *************************[0m
+[0;31mE (54965) UART_HTTP: *************************[0m
+[0;31mE (55965) UART_HTTP: *************************[0m
+[0;31mE (56965) UART_HTTP: *************************[0m
+[0;31mE (57965) UART_HTTP: *************************[0m
+[0;31mE (58965) UART_HTTP: *************************[0m
+[0;31mE (59965) UART_HTTP: *************************[0m
+[0;31mE (60965) UART_HTTP: *************************[0m
+[0;31mE (61965) UART_HTTP: *************************[0m
+[0;31mE (62965) UART_HTTP: *************************[0m
+[0;31mE (63965) UART_HTTP: *************************[0m
+[0;31mE (64965) UART_HTTP: *************************[0m
+[0;31mE (65965) UART_HTTP: *************************[0m
+[0;31mE (66965) UART_HTTP: *************************[0m
+[0;31mE (67965) UART_HTTP: *************************[0m
+[0;31mE (68965) UART_HTTP: *************************[0m
+[0;31mE (69965) UART_HTTP: *************************[0m
+[0;31mE (70965) UART_HTTP: *************************[0m
+[0;31mE (71965) UART_HTTP: *************************[0m
+[0;31mE (72965) UART_HTTP: *************************[0m
+[0;31mE (73965) UART_HTTP: *************************[0m
+[0;31mE (74965) UART_HTTP: *************************[0m
+[0;31mE (75965) UART_HTTP: *************************[0m
+[0;31mE (76965) UART_HTTP: *************************[0m
+[0;31mE (77965) UART_HTTP: *************************[0m
+[0;31mE (78965) UART_HTTP: *************************[0m
+[0;31mE (79965) UART_HTTP: *************************[0m
+[0;31mE (80965) UART_HTTP: *************************[0m
+[0;31mE (81965) UART_HTTP: *************************[0m
+[0;31mE (82965) UART_HTTP: *************************[0m
+[0;31mE (83965) UART_HTTP: *************************[0m
+[0;31mE (84965) UART_HTTP: *************************[0m
+[0;31mE (85965) UART_HTTP: *************************[0m
+[0;31mE (86965) UART_HTTP: *************************[0m
+[0;31mE (87965) UART_HTTP: *************************[0m
+[0;31mE (88965) UART_HTTP: *************************[0m
+[0;31mE (89965) UART_HTTP: *************************[0m
+[0;31mE (90965) UART_HTTP: *************************[0m
+[0;31mE (91965) UART_HTTP: *************************[0m
+[0;31mE (92965) UART_HTTP: *************************[0m
+[0;31mE (93965) UART_HTTP: *************************[0m
+[0;31mE (94965) UART_HTTP: *************************[0m
+[0;31mE (95965) UART_HTTP: *************************[0m
+[0;31mE (96965) UART_HTTP: *************************[0m
+[0;31mE (97965) UART_HTTP: *************************[0m
+[0;31mE (98965) UART_HTTP: *************************[0m
+[0;31mE (99965) UART_HTTP: *************************[0m
+[0;31mE (100965) UART_HTTP: *************************[0m
+[0;31mE (101965) UART_HTTP: *************************[0m
+[0;31mE (102965) UART_HTTP: *************************[0m
+[0;31mE (103965) UART_HTTP: *************************[0m
+[0;31mE (104965) UART_HTTP: *************************[0m
+[0;31mE (105965) UART_HTTP: *************************[0m
+[0;31mE (106965) UART_HTTP: *************************[0m
+[0;31mE (107965) UART_HTTP: *************************[0m
+[0;31mE (108965) UART_HTTP: *************************[0m
+[0;31mE (109965) UART_HTTP: *************************[0m
+[0;31mE (110965) UART_HTTP: *************************[0m
+[0;31mE (111965) UART_HTTP: *************************[0m
+[0;31mE (112965) UART_HTTP: *************************[0m
+[0;31mE (113965) UART_HTTP: *************************[0m
+[0;31mE (114965) UART_HTTP: *************************[0m
+[0;31mE (115965) UART_HTTP: *************************[0m
+[0;31mE (116965) UART_HTTP: *************************[0m
+[0;31mE (117965) UART_HTTP: *************************[0m
+[0;31mE (118965) UART_HTTP: *************************[0m
+[0;31mE (119965) UART_HTTP: *************************[0m
+[0;31mE (120965) UART_HTTP: *************************[0m
+[0;31mE (121965) UART_HTTP: *************************[0m
+[0;31mE (122965) UART_HTTP: *************************[0m
+[0;31mE (123965) UART_HTTP: *************************[0m
+[0;31mE (124965) UART_HTTP: *************************[0m
+[0;31mE (125965) UART_HTTP: *************************[0m
+[0;31mE (126965) UART_HTTP: *************************[0m
+[0;31mE (127965) UART_HTTP: *************************[0m
+[0;31mE (128965) UART_HTTP: *************************[0m
+[0;31mE (129965) UART_HTTP: *************************[0m
+[0;31mE (130965) UART_HTTP: *************************[0m
+[0;31mE (131965) UART_HTTP: *************************[0m
+[0;31mE (132965) UART_HTTP: *************************[0m
+[0;31mE (133965) UART_HTTP: *************************[0m
+[0;31mE (134965) UART_HTTP: *************************[0m
+[0;31mE (135965) UART_HTTP: *************************[0m
+[0;31mE (136965) UART_HTTP: *************************[0m
+[0;31mE (137965) UART_HTTP: *************************[0m
+[0;31mE (138965) UART_HTTP: *************************[0m
+[0;31mE (139965) UART_HTTP: *************************[0m
+[0;31mE (140965) UART_HTTP: *************************[0m
+[0;31mE (141965) UART_HTTP: *************************[0m
+[0;31mE (142965) UART_HTTP: *************************[0m
+[0;31mE (143965) UART_HTTP: *************************[0m
+[0;31mE (144965) UART_HTTP: *************************[0m
+[0;31mE (145965) UART_HTTP: *************************[0m
+[0;31mE (146965) UART_HTTP: *************************[0m
+[0;31mE (147965) UART_HTTP: *************************[0m
+[0;31mE (148965) UART_HTTP: *************************[0m
+[0;31mE (149965) UART_HTTP: *************************[0m
+[0;31mE (150965) UART_HTTP: *************************[0m
+[0;31mE (151965) UART_HTTP: *************************[0m
+[0;31mE (152965) UART_HTTP: *************************[0m
+[0;31mE (153965) UART_HTTP: *************************[0m
+[0;31mE (154965) UART_HTTP: *************************[0m
+[0;31mE (155965) UART_HTTP: *************************[0m
+[0;31mE (156965) UART_HTTP: *************************[0m
+[0;31mE (157965) UART_HTTP: *************************[0m
+[0;31mE (158965) UART_HTTP: *************************[0m
+[0;31mE (159965) UART_HTTP: *************************[0m
+[0;31mE (160965) UART_HTTP: *************************[0m
+[0;31mE (161965) UART_HTTP: *************************[0m
+[0;31mE (162965) UART_HTTP: *************************[0m
+[0;31mE (163965) UART_HTTP: *************************[0m
+[0;31mE (164965) UART_HTTP: *************************[0m
+[0;31mE (165965) UART_HTTP: *************************[0m
+[0;31mE (166965) UART_HTTP: *************************[0m
+[0;31mE (167965) UART_HTTP: *************************[0m
+[0;31mE (168965) UART_HTTP: *************************[0m
+[0;31mE (169965) UART_HTTP: *************************[0m
+[0;31mE (170965) UART_HTTP: *************************[0m
+[0;31mE (171965) UART_HTTP: *************************[0m
+[0;31mE (172965) UART_HTTP: *************************[0m
+[0;31mE (173965) UART_HTTP: *************************[0m
+[0;31mE (174965) UART_HTTP: *************************[0m
+[0;31mE (175965) UART_HTTP: *************************[0m
+[0;31mE (176965) UART_HTTP: *************************[0m
+[0;31mE (177965) UART_HTTP: *************************[0m
+[0;31mE (178965) UART_HTTP: *************************[0m
+[0;31mE (179965) UART_HTTP: *************************[0m
+[0;31mE (180965) UART_HTTP: *************************[0m
+[0;31mE (181965) UART_HTTP: *************************[0m
+[0;31mE (182965) UART_HTTP: *************************[0m
+[0;31mE (183965) UART_HTTP: *************************[0m
+[0;31mE (184965) UART_HTTP: *************************[0m
+[0;31mE (185965) UART_HTTP: *************************[0m
+[0;31mE (186965) UART_HTTP: *************************[0m
+[0;31mE (187965) UART_HTTP: *************************[0m
+[0;31mE (188965) UART_HTTP: *************************[0m
+[0;31mE (189965) UART_HTTP: *************************[0m
+[0;31mE (190965) UART_HTTP: *************************[0m
+[0;31mE (191965) UART_HTTP: *************************[0m
+[0;31mE (192965) UART_HTTP: *************************[0m
+[0;31mE (193965) UART_HTTP: *************************[0m
+[0;31mE (194965) UART_HTTP: *************************[0m
+[0;31mE (195965) UART_HTTP: *************************[0m
+[0;31mE (196965) UART_HTTP: *************************[0m
+[0;31mE (197965) UART_HTTP: *************************[0m
+[0;31mE (198965) UART_HTTP: *************************[0m
+[0;31mE (199965) UART_HTTP: *************************[0m
+[0;31mE (200965) UART_HTTP: *************************[0m
+[0;31mE (201965) UART_HTTP: *************************[0m
+[0;31mE (202965) UART_HTTP: *************************[0m
+[0;31mE (203965) UART_HTTP: *************************[0m
+[0;31mE (204965) UART_HTTP: *************************[0m
+[0;31mE (205965) UART_HTTP: *************************[0m
+[0;31mE (206965) UART_HTTP: *************************[0m
+[0;31mE (207965) UART_HTTP: *************************[0m
+[0;31mE (208965) UART_HTTP: *************************[0m
+[0;31mE (209965) UART_HTTP: *************************[0m
+[0;31mE (210965) UART_HTTP: *************************[0m
+[0;31mE (211965) UART_HTTP: *************************[0m
+[0;31mE (212965) UART_HTTP: *************************[0m
+[0;31mE (213965) UART_HTTP: *************************[0m
+[0;31mE (214965) UART_HTTP: *************************[0m
+[0;31mE (215965) UART_HTTP: *************************[0m
+[0;31mE (216965) UART_HTTP: *************************[0m
+[0;31mE (217965) UART_HTTP: *************************[0m
+[0;31mE (218965) UART_HTTP: *************************[0m
+[0;31mE (219965) UART_HTTP: *************************[0m
+[0;31mE (220965) UART_HTTP: *************************[0m
+[0;31mE (221965) UART_HTTP: *************************[0m
+[0;31mE (222965) UART_HTTP: *************************[0m
+[0;31mE (223965) UART_HTTP: *************************[0m
+[0;31mE (224965) UART_HTTP: *************************[0m
+[0;31mE (225965) UART_HTTP: *************************[0m
+[0;31mE (226965) UART_HTTP: *************************[0m
+[0;31mE (227965) UART_HTTP: *************************[0m
+[0;31mE (228965) UART_HTTP: *************************[0m
+[0;31mE (229965) UART_HTTP: *************************[0m
+[0;31mE (230965) UART_HTTP: *************************[0m
+[0;31mE (231965) UART_HTTP: *************************[0m
+[0;31mE (232965) UART_HTTP: *************************[0m
+[0;31mE (233965) UART_HTTP: *************************[0m
+[0;31mE (234965) UART_HTTP: *************************[0m
+[0;31mE (235965) UART_HTTP: *************************[0m
+[0;31mE (236965) UART_HTTP: *************************[0m
+[0;31mE (237965) UART_HTTP: *************************[0m
+[0;31mE (238965) UART_HTTP: *************************[0m
+[0;31mE (239965) UART_HTTP: *************************[0m
+[0;31mE (240965) UART_HTTP: *************************[0m
+[0;31mE (241965) UART_HTTP: *************************[0m
+[0;31mE (242965) UART_HTTP: *************************[0m
+[0;31mE (243965) UART_HTTP: *************************[0m
+[0;31mE (244965) UART_HTTP: *************************[0m
+[0;31mE (245965) UART_HTTP: *************************[0m
+[0;31mE (246965) UART_HTTP: *************************[0m
+[0;31mE (247965) UART_HTTP: *************************[0m
+[0;31mE (248965) UART_HTTP: *************************[0m
+[0;31mE (249965) UART_HTTP: *************************[0m
+[0;31mE (250965) UART_HTTP: *************************[0m
+[0;31mE (251965) UART_HTTP: *************************[0m
+[0;31mE (252965) UART_HTTP: *************************[0m
+[0;31mE (253965) UART_HTTP: *************************[0m
+[0;31mE (254965) UART_HTTP: *************************[0m
+[0;31mE (255965) UART_HTTP: *************************[0m
+[0;31mE (256965) UART_HTTP: *************************[0m
+[0;31mE (257965) UART_HTTP: *************************[0m
+[0;31mE (258965) UART_HTTP: *************************[0m
+[0;31mE (259965) UART_HTTP: *************************[0m
+[0;31mE (260965) UART_HTTP: *************************[0m
+[0;31mE (261965) UART_HTTP: *************************[0m
+[0;31mE (262965) UART_HTTP: *************************[0m
+[0;31mE (263965) UART_HTTP: *************************[0m
+[0;31mE (264965) UART_HTTP: *************************[0m
+[0;31mE (265965) UART_HTTP: *************************[0m
+[0;31mE (266965) UART_HTTP: *************************[0m
+[0;31mE (267965) UART_HTTP: *************************[0m
+[0;31mE (268965) UART_HTTP: *************************[0m
+[0;31mE (269965) UART_HTTP: *************************[0m
+[0;31mE (270965) UART_HTTP: *************************[0m
+[0;31mE (271965) UART_HTTP: *************************[0m
+[0;31mE (272965) UART_HTTP: *************************[0m
+[0;31mE (273965) UART_HTTP: *************************[0m
+[0;31mE (274965) UART_HTTP: *************************[0m
+[0;31mE (275965) UART_HTTP: *************************[0m
+[0;31mE (276965) UART_HTTP: *************************[0m
+[0;31mE (277965) UART_HTTP: *************************[0m
+[0;31mE (278965) UART_HTTP: *************************[0m
+[0;31mE (279965) UART_HTTP: *************************[0m
+[0;31mE (280965) UART_HTTP: *************************[0m
+[0;31mE (281965) UART_HTTP: *************************[0m
+[0;31mE (282965) UART_HTTP: *************************[0m
+[0;31mE (283965) UART_HTTP: *************************[0m
+[0;31mE (284965) UART_HTTP: *************************[0m
+[0;31mE (285965) UART_HTTP: *************************[0m
+[0;31mE (286965) UART_HTTP: *************************[0m
+[0;31mE (287965) UART_HTTP: *************************[0m
+[0;31mE (288965) UART_HTTP: *************************[0m
+[0;31mE (289965) UART_HTTP: *************************[0m
+[0;31mE (290965) UART_HTTP: *************************[0m
+[0;31mE (291965) UART_HTTP: *************************[0m
+[0;31mE (292965) UART_HTTP: *************************[0m
+[0;31mE (293965) UART_HTTP: *************************[0m
+[0;31mE (294965) UART_HTTP: *************************[0m
+[0;31mE (295965) UART_HTTP: *************************[0m
+[0;31mE (296965) UART_HTTP: *************************[0m
+[0;31mE (297965) UART_HTTP: *************************[0m
+[0;31mE (298965) UART_HTTP: *************************[0m
+[0;31mE (299965) UART_HTTP: *************************[0m
+[0;31mE (300965) UART_HTTP: *************************[0m
+[0;31mE (301965) UART_HTTP: *************************[0m
+[0;31mE (302965) UART_HTTP: *************************[0m
+[0;31mE (303965) UART_HTTP: *************************[0m
+[0;31mE (304965) UART_HTTP: *************************[0m
+[0;31mE (305965) UART_HTTP: *************************[0m
+[0;31mE (306965) UART_HTTP: *************************[0m
+[0;31mE (307965) UART_HTTP: *************************[0m
+[0;31mE (308965) UART_HTTP: *************************[0m
+[0;31mE (309965) UART_HTTP: *************************[0m
+[0;31mE (310965) UART_HTTP: *************************[0m
+[0;31mE (311965) UART_HTTP: *************************[0m
+[0;31mE (312965) UART_HTTP: *************************[0m
+[0;31mE (313965) UART_HTTP: *************************[0m
+[0;31mE (314965) UART_HTTP: *************************[0m
+[0;31mE (315965) UART_HTTP: *************************[0m
+[0;31mE (316965) UART_HTTP: *************************[0m
+[0;31mE (317965) UART_HTTP: *************************[0m
+[0;31mE (318965) UART_HTTP: *************************[0m
+[0;31mE (319965) UART_HTTP: *************************[0m
+[0;32mI (320965) UART_HTTP: Received: cc:47:40:01:35:46�奉)��Q���7��Ã�S>�l;��������R��	`�ˊ�T�e:�ޅh����ڜ�l�+�X�����C�m���Z��\����#a��٢�����p @�֢�@,��;�$G���%|ʌ紉�˴V�xgo�g����?�����Ch���26u��J�3/�I�?H��s<�������>��^I�8���^K��I��?[0m
+[0;31mE (320975) UART_HTTP: Request buffer overflowed[0m
+[0;32mI (320975) UART_HTTP: DGuru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4008b8aa  PS      : 0x00060033  A0      : 0x8008c1fd  A1      : 0x3ffbb000  
+A2      : 0xa5a5a5a5  A3      : 0xa5a5a5a5  A4      : 0x8008b2c5  A5      : 0x00060023  
+A6      : 0x00000001  A7      : 0x00000000  A8      : 0x00000002  A9      : 0x00000000  
+A10     : 0x3ffc9098  A11     : 0xfdd01b9d  A12     : 0x00000001  A13     : 0x3ffb3f40  
+A14     : 0xfdd01b9d  A15     : 0x00000001  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0xfdd01be1  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4008b8a7:0x3ffbb000 0x4008c1fa:0x3ffbb020 0x4008b018:0x3ffbb040 0x4008afca:0x4008345a |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 98d0199e7
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (431) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  98d0199e7...[0m
+[0;32mI (447) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (457) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (486) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (4395) wifi:state: auth -> init (200)
+I (4395) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (4395) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (6815) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (9235) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (9235) wifi:state: init -> auth (b0)
+I (10235) wifi:state: auth -> init (200)
+I (10235) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (10235) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (12655) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+I (15065) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (15065) wifi:state: init -> auth (b0)
+I (15085) wifi:state: auth -> assoc (0)
+I (15095) wifi:state: assoc -> run (10)
+I (15125) wifi:connected with ESP, aid = 1, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (15125) wifi:security: WPA2-PSK, phy: bgn, rssi: -24
+I (15125) wifi:pm start, type: 1
+
+I (15125) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (15135) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (16135) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16135) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (16545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (16545) example_common: Connected to example_netif_sta[0m
+[0;32mI (16555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (16555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (16575) UART_HTTP: *************************[0m
+[0;31mE (16575) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (16585) main_task: Returned from app_main()[0m
+[0;31mE (17575) UART_HTTP: *************************[0m
+[0;31mE (18575) UART_HTTP: *************************[0m
+[0;31mE (19575) UART_HTTP: *************************[0m
+[0;31mE (20575) UART_HTTP: *************************[0m
+I (21085) wifi:<ba-add>idx:0 (ifx:0, f6:a4:75:d3:08:a6), tid:0, ssn:5, winSize:64
+[0;31mE (21575) UART_HTTP: *************************[0m
+[0;31mE (22575) UART_HTTP: *************************[0m
+[0;31mE (23575) UART_HTTP: *************************[0m
+[0;31mE (24575) UART_HTTP: *************************[0m
+[0;31mE (25575) UART_HTTP: *************************[0m
+[0;31mE (26575) UART_HTTP: *************************[0m
+[0;31mE (27575) UART_HTTP: *************************[0m
+[0;31mE (28575) UART_HTTP: *************************[0m
+[0;31mE (29575) UART_HTTP: *************************[0m
+[0;31mE (30575) UART_HTTP: *************************[0m
+[0;31mE (31575) UART_HTTP: *************************[0m
+[0;31mE (32575) UART_HTTP: *************************[0m
+[0;31mE (33575) UART_HTTP: *************************[0m
+[0;31mE (34575) UART_HTTP: *************************[0m
+[0;31mE (35575) UART_HTTP: *************************[0m
+[0;31mE (36575) UART_HTTP: *************************[0m
+[0;31mE (37575) UART_HTTP: *************************[0m
+[0;31mE (38575) UART_HTTP: *************************[0m
+[0;31mE (39575) UART_HTTP: *************************[0m
+[0;31mE (40575) UART_HTTP: *************************[0m
+[0;31mE (41575) UART_HTTP: *************************[0m
+[0;31mE (42575) UART_HTTP: *************************[0m
+[0;31mE (43575) UART_HTTP: *************************[0m
+[0;31mE (44575) UART_HTTP: *************************[0m
+[0;31mE (45575) UART_HTTP: *************************[0m
+[0;31mE (46575) UART_HTTP: *************************[0m
+[0;31mE (47575) UART_HTTP: *************************[0m
+[0;31mE (48575) UART_HTTP: *************************[0m
+[0;31mE (49575) UART_HTTP: *************************[0m
+[0;31mE (50575) UART_HTTP: *************************[0m
+[0;31mE (51575) UART_HTTP: *************************[0m
+[0;31mE (52575) UART_HTTP: *************************[0m
+[0;31mE (53575) UART_HTTP: *************************[0m
+[0;31mE (54575) UART_HTTP: *************************[0m
+[0;31mE (55575) UART_HTTP: *************************[0m
+[0;31mE (56575) UART_HTTP: *************************[0m
+[0;31mE (57575) UART_HTTP: *************************[0m
+[0;31mE (58575) UART_HTTP: *************************[0m
+[0;31mE (59575) UART_HTTP: *************************[0m
+[0;31mE (60575) UART_HTTP: *************************[0m
+[0;31mE (61575) UART_HTTP: *************************[0m
+[0;31mE (62575) UART_HTTP: *************************[0m
+[0;31mE (63575) UART_HTTP: *************************[0m
+[0;31mE (64575) UART_HTTP: *************************[0m
+[0;31mE (65575) UART_HTTP: *************************[0m
+[0;31mE (66575) UART_HTTP: *************************[0m
+[0;31mE (67575) UART_HTTP: *************************[0m
+[0;31mE (68575) UART_HTTP: *************************[0m
+[0;31mE (69575) UART_HTTP: *************************[0m
+[0;31mE (70575) UART_HTTP: *************************[0m
+[0;31mE (71575) UART_HTTP: *************************[0m
+[0;31mE (72575) UART_HTTP: *************************[0m
+[0;31mE (73575) UART_HTTP: *************************[0m
+[0;31mE (74575) UART_HTTP: *************************[0m
+[0;31mE (75575) UART_HTTP: *************************[0m
+[0;31mE (76575) UART_HTTP: *************************[0m
+[0;31mE (77575) UART_HTTP: *************************[0m
+[0;31mE (78575) UART_HTTP: *************************[0m
+[0;31mE (79575) UART_HTTP: *************************[0m
+[0;31mE (80575) UART_HTTP: *************************[0m
+[0;31mE (81575) UART_HTTP: *************************[0m
+[0;31mE (82575) UART_HTTP: *************************[0m
+[0;31mE (83575) UART_HTTP: *************************[0m
+[0;31mE (84575) UART_HTTP: *************************[0m
+[0;31mE (85575) UART_HTTP: *************************[0m
+[0;31mE (86575) UART_HTTP: *************************[0m
+[0;31mE (87575) UART_HTTP: *************************[0m
+[0;31mE (88575) UART_HTTP: *************************[0m
+[0;31mE (89575) UART_HTTP: *************************[0m
+[0;31mE (90575) UART_HTTP: *************************[0m
+[0;31mE (91575) UART_HTTP: *************************[0m
+[0;31mE (92575) UART_HTTP: *************************[0m
+[0;31mE (93575) UART_HTTP: *************************[0m
+[0;31mE (94575) UART_HTTP: *************************[0m
+[0;31mE (95575) UART_HTTP: *************************[0m
+[0;31mE (96575) UART_HTTP: *************************[0m
+[0;31mE (97575) UART_HTTP: *************************[0m
+[0;31mE (98575) UART_HTTP: *************************[0m
+[0;31mE (99575) UART_HTTP: *************************[0m
+[0;31mE (100575) UART_HTTP: *************************[0m
+[0;31mE (101575) UART_HTTP: *************************[0m
+[0;31mE (102575) UART_HTTP: *************************[0m
+[0;31mE (103575) UART_HTTP: *************************[0m
+[0;31mE (104575) UART_HTTP: *************************[0m
+[0;31mE (105575) UART_HTTP: *************************[0m
+[0;31mE (106575) UART_HTTP: *************************[0m
+[0;31mE (107575) UART_HTTP: *************************[0m
+[0;31mE (108575) UART_HTTP: *************************[0m
+[0;31mE (109575) UART_HTTP: *************************[0m
+[0;31mE (110575) UART_HTTP: *************************[0m
+[0;31mE (111575) UART_HTTP: *************************[0m
+[0;31mE (112575) UART_HTTP: *************************[0m
+[0;31mE (113575) UART_HTTP: *************************[0m
+[0;31mE (114575) UART_HTTP: *************************[0m
+[0;31mE (115575) UART_HTTP: *************************[0m
+[0;31mE (116575) UART_HTTP: *************************[0m
+[0;31mE (117575) UART_HTTP: *************************[0m
+[0;31mE (118575) UART_HTTP: *************************[0m
+[0;31mE (119575) UART_HTTP: *************************[0m
+[0;31mE (120575) UART_HTTP: *************************[0m
+[0;31mE (121575) UART_HTTP: *************************[0m
+[0;31mE (122575) UART_HTTP: *************************[0m
+[0;31mE (123575) UART_HTTP: *************************[0m
+[0;31mE (124575) UART_HTTP: *************************[0m
+[0;31mE (125575) UART_HTTP: *************************[0m
+[0;31mE (126575) UART_HTTP: *************************[0m
+[0;31mE (127575) UART_HTTP: *************************[0m
+[0;31mE (128575) UART_HTTP: *************************[0m
+[0;31mE (129575) UART_HTTP: *************************[0m
+[0;31mE (130575) UART_HTTP: *************************[0m
+[0;31mE (131575) UART_HTTP: *************************[0m
+[0;31mE (132575) UART_HTTP: *************************[0m
+[0;31mE (133575) UART_HTTP: *************************[0m
+[0;31mE (134575) UART_HTTP: *************************[0m
+[0;31mE (135575) UART_HTTP: *************************[0m
+[0;31mE (136575) UART_HTTP: *************************[0m
+[0;31mE (137575) UART_HTTP: *************************[0m
+[0;31mE (138575) UART_HTTP: *************************[0m
+[0;31mE (139575) UART_HTTP: *************************[0m
+[0;31mE (140575) UART_HTTP: *************************[0m
+[0;31mE (141575) UART_HTTP: *************************[0m
+[0;31mE (142575) UART_HTTP: *************************[0m
+[0;31mE (143575) UART_HTTP: *************************[0m
+[0;31mE (144575) UART_HTTP: *************************[0m
+[0;31mE (145575) UART_HTTP: *************************[0m
+[0;31mE (146575) UART_HTTP: *************************[0m
+[0;31mE (147575) UART_HTTP: *************************[0m
+[0;31mE (148575) UART_HTTP: *************************[0m
+[0;31mE (149575) UART_HTTP: *************************[0m
+[0;31mE (150575) UART_HTTP: *************************[0m
+[0;31mE (151575) UART_HTTP: *************************[0m
+[0;31mE (152575) UART_HTTP: *************************[0m
+[0;31mE (153575) UART_HTTP: *************************[0m
+[0;31mE (154575) UART_HTTP: *************************[0m
+[0;31mE (155575) UART_HTTP: *************************[0m
+[0;31mE (156575) UART_HTTP: *************************[0m
+[0;31mE (157575) UART_HTTP: *************************[0m
+[0;31mE (158575) UART_HTTP: *************************[0m
+[0;31mE (159575) UART_HTTP: *************************[0m
+[0;31mE (160575) UART_HTTP: *************************[0m
+[0;31mE (161575) UART_HTTP: *************************[0m
+[0;31mE (162575) UART_HTTP: *************************[0m
+[0;31mE (163575) UART_HTTP: *************************[0m
+[0;31mE (164575) UART_HTTP: *************************[0m
+[0;31mE (165575) UART_HTTP: *************************[0m
+[0;31mE (166575) UART_HTTP: *************************[0m
+[0;31mE (167575) UART_HTTP: *************************[0m
+[0;31mE (168575) UART_HTTP: *************************[0m
+[0;31mE (169575) UART_HTTP: *************************[0m
+[0;31mE (170575) UART_HTTP: *************************[0m
+[0;31mE (171575) UART_HTTP: *************************[0m
+[0;31mE (172575) UART_HTTP: *************************[0m
+[0;31mE (173575) UART_HTTP: *************************[0m
+[0;31mE (174575) UART_HTTP: *************************[0m
+[0;31mE (175575) UART_HTTP: *************************[0m
+[0;31mE (176575) UART_HTTP: *************************[0m
+[0;31mE (177575) UART_HTTP: *************************[0m
+[0;31mE (178575) UART_HTTP: *************************[0m
+[0;31mE (179575) UART_HTTP: *************************[0m
+[0;31mE (180575) UART_HTTP: *************************[0m
+[0;31mE (181575) UART_HTTP: *************************[0m
+[0;31mE (182575) UART_HTTP: *************************[0m
+[0;31mE (183575) UART_HTTP: *************************[0m

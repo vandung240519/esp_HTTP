@@ -1,0 +1,570 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400daf99: uart_get_buffered_data_len at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1441
+0x400d6d56: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:36
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4008accc: xPortEnterCriticalTimeout at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:463
+0x4008a443: vPortEnterCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4008a3d9: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008ca92: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4948
+0x4008a40d: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:941
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6d56: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:36
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6d56: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:36
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008ca92: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4948
+0x4008a40d: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:941
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6d56: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:36
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6d56: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:36
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dbbab: task_wdt_timeout_handling at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400dbf70: task_wdt_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4008a3d9: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:937 (discriminator 2)
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6d73: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008ca92: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4948
+0x4008a40d: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:941
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008ca92: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4948
+0x4008a40d: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:941
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6d56: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:36
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4008a3ba: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:937
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4008a88d: xQueueReceive at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1694
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400dbbab: task_wdt_timeout_handling at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400dbf70: task_wdt_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a934: xQueueSemaphoreTake at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x400dae7d: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1402
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400dae6e: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1398
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084f7e: esp_crosscore_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008aea3: vPortClearInterruptMaskFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a4bb: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x400daf19: uart_read_bytes at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/uart.c:1431
+0x400d6d78: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:37
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

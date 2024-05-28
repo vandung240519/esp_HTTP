@@ -1,0 +1,254 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008f8f2: remove_free_block at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:332
+ (inlined by) block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:567
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x4008f8ef: remove_free_block at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:331 (discriminator 1)
+ (inlined by) block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+0x4008f28d: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d1: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x4008212c: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x4008b189: pvPortMalloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/heap_idf.c:55
+0x4008a2aa: xQueueGenericCreate at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x400f15e8: sys_thread_sem_init at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:527
+0x400f162d: sys_thread_sem_get at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:495
+0x400f1dd5: netconn_gethostbyname_addrtype at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:1316
+0x400df7c9: lwip_getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/netdb.c:345
+0x400d6d80: getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:55
+0x400d7049: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:168
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818d6: panic_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x40089f39: esp_system_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x400918e9: __assert_func at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/assert.c:81
+0x4008f8c8: block_locate_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+0x4008f28d: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d1: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x4008212c: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x40082161: heap_caps_malloc_default at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:228
+0x400918f9: malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/heap.c:24
+0x400e1de1: mem_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/mem.c:209
+0x400e2fd3: pbuf_alloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/pbuf.c:284
+0x400e7cce: tcp_enqueue_flags at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/tcp_out.c:1077
+0x400e436a: tcp_connect at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/tcp.c:1176
+0x400f2cb5: lwip_netconn_do_connect at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_msg.c:1453
+0x400e1ac1: tcpip_thread_handle_msg at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/tcpip.c:162
+0x400e1b65: tcpip_thread at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/tcpip.c:148
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818d6: panic_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x40089f39: esp_system_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x400918e9: __assert_func at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/assert.c:81
+0x4008f964: block_trim_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:496 (discriminator 3)
+ (inlined by) block_prepare_used at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:579 (discriminator 3)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1006 (discriminator 3)
+0x4008f28d: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d1: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x4008212c: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x4008b189: pvPortMalloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/heap_idf.c:55
+0x4008a2aa: xQueueGenericCreate at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x400f13e6: sys_mbox_new at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:214
+0x400f2a04: netconn_alloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_msg.c:770
+0x400f184f: netconn_new_with_proto_and_callback at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:155
+0x400e14bd: lwip_socket at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400d6dd7: socket at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/sockets.h:48
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:67
+0x400d7049: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:168
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008b88a: prvSelectHighestPriorityTaskSMP at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3551
+[0m
+[0;33m0x4008b887: prvSelectHighestPriorityTaskSMP at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3537 (discriminator 1)
+0x4008c1da: vTaskSwitchContext at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+0x4008aff8: _frxt_dispatch at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008afaa: _frxt_int_exit at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+0x40083456: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1233
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008ad58: spinlock_acquire at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:131
+ (inlined by) xPortEnterCriticalTimeout at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d3633: uart_hal_write_txfifo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x4008ad58: spinlock_acquire at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:131
+ (inlined by) xPortEnterCriticalTimeout at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+[0m
+[0;33m0x4008ad55: spinlock_acquire at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:130
+ (inlined by) xPortEnterCriticalTimeout at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+0x4008c2f4: vPortEnterCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) xTaskRemoveFromEventList at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3812
+0x4008a688: xQueueGenericSendFromISR at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1264
+0x400851c6: queue_send_from_isr_wrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/esp32/esp_adapter.c:271
+0x400853ab: pp_post at ??:?
+0x4008527e: lmacProcessRxSucData at ??:?
+0x40085723: wDev_ProcessFiq at ??:?
+0x400834b9: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6551: uart_ll_get_txfifo_len at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:165
+0x400d6d13: uart_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:218
+0x400d5b87: console_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5712: esp_vfs_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40142049: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40149713: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x401490d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x401424ed: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40156bc1: esp_log_writev at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x40090141: esp_log_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d6d55: CreateReq at C:/esp/wifi_truyen/main/http_request_example_main.c:36 (discriminator 1)
+0x400d7044: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:166
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40087e44: xt_utils_compare_and_set at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:222
+ (inlined by) esp_cpu_compare_and_set at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:491
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40087e41: xt_utils_compare_and_set at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:222
+ (inlined by) esp_cpu_compare_and_set at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:491
+0x4008ad55: spinlock_acquire at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:130
+ (inlined by) xPortEnterCriticalTimeout at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+0x4008ced0: vPortEnterCritical at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) xTaskPriorityDisinherit at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:5065
+0x40089f97: prvCopyDataToQueue at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4008a461: xQueueGenericSend at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x4008a5ae: xQueueGiveMutexRecursive at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:789
+0x40082aa3: lock_release_generic at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:190
+0x40082b75: _lock_release_recursive at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:202
+0x400d6d25: uart_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:220
+0x400d5b87: console_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5712: esp_vfs_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40142049: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40149713: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x401490d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x401424ed: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40156bc1: esp_log_writev at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x40090141: esp_log_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d6d55: CreateReq at C:/esp/wifi_truyen/main/http_request_example_main.c:36 (discriminator 1)
+0x400d7044: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:166
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818d6: panic_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x40089f39: esp_system_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x400918e9: __assert_func at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/assert.c:81
+0x4008f964: block_trim_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:496 (discriminator 3)
+ (inlined by) block_prepare_used at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:579 (discriminator 3)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1006 (discriminator 3)
+0x4008f28d: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d1: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x4008212c: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x4008b189: pvPortMalloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/heap_idf.c:55
+0x4008a2aa: xQueueGenericCreate at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x400f15e8: sys_thread_sem_init at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:527
+0x400f162d: sys_thread_sem_get at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:495
+0x400f1dd5: netconn_gethostbyname_addrtype at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:1316
+0x400df7c9: lwip_getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/netdb.c:345
+0x400d6d80: getaddrinfo at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:55
+0x400d7049: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:168
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818d6: panic_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x40089f39: esp_system_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x400918e9: __assert_func at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/assert.c:81
+0x4008f964: block_trim_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:496 (discriminator 3)
+ (inlined by) block_prepare_used at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:579 (discriminator 3)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1006 (discriminator 3)
+0x4008f28d: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d1: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x4008212c: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x40082161: heap_caps_malloc_default at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:228
+0x400918f9: malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/heap.c:24
+0x400e1de1: mem_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/mem.c:209
+0x400e2fd3: pbuf_alloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/pbuf.c:284
+0x400e7cce: tcp_enqueue_flags at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/tcp_out.c:1077
+0x400e436a: tcp_connect at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/core/tcp.c:1176
+0x400f2cb5: lwip_netconn_do_connect at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_msg.c:1453
+0x400e1ac1: tcpip_thread_handle_msg at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/tcpip.c:162
+0x400e1b65: tcpip_thread at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/tcpip.c:148
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008b88a: prvSelectHighestPriorityTaskSMP at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3551
+[0m
+[0;33m0x4011f1f8: ppCheckTxIdle at ??:?
+0x4011f200: ppCheckTxIdle at ??:?
+[0m
+[0;33m0x4008b887: prvSelectHighestPriorityTaskSMP at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3537 (discriminator 1)
+0x4008c1da: vTaskSwitchContext at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+0x4008aff8: _frxt_dispatch at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008afaa: _frxt_int_exit at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+0x4011dd0f: pm_go_to_wake at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008b88a: prvSelectHighestPriorityTaskSMP at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3551
+[0m
+[0;33m0x4008b887: prvSelectHighestPriorityTaskSMP at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3537 (discriminator 1)
+0x4008c1da: vTaskSwitchContext at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+0x4008aff8: _frxt_dispatch at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008afaa: _frxt_int_exit at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+0x40083456: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1233
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818d6: panic_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x40089f39: esp_system_abort at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x400918e9: __assert_func at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/assert.c:81
+0x4008f964: block_trim_free at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:496 (discriminator 3)
+ (inlined by) block_prepare_used at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:579 (discriminator 3)
+ (inlined by) tlsf_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/tlsf/tlsf.c:1006 (discriminator 3)
+0x4008f28d: multi_heap_malloc_impl at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/multi_heap.c:210
+0x400820d1: heap_caps_malloc_base at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:179
+0x4008212c: heap_caps_malloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/heap/heap_caps.c:202
+0x4008b189: pvPortMalloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/heap_idf.c:55
+0x4008a2aa: xQueueGenericCreate at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:545
+0x400f13e6: sys_mbox_new at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:214
+0x400f2a04: netconn_alloc at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_msg.c:770
+0x400f184f: netconn_new_with_proto_and_callback at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:155
+0x400e14bd: lwip_socket at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400d6dd7: socket at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/lwip/sockets.h:48
+ (inlined by) http_post_task at C:/esp/wifi_truyen/main/http_request_example_main.c:67
+0x400d7049: uart_event_task at C:/esp/wifi_truyen/main/http_request_example_main.c:168
+0x4008ab01: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

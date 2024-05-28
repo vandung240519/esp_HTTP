@@ -1,0 +1,718 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244f8h (148728) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00034520 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00038134 vaddr=40080000 size=07ee4h ( 32484) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88510h (558352) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c8538 vaddr=40087ee4 size=0f6d0h ( 63184) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  d7db1a37e...[0m
+[0;32mI (448) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (475) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (500) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (725) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3405) wifi:state: auth -> assoc (0)
+I (3405) wifi:state: assoc -> run (10)
+I (3415) wifi:connected with ESP, aid = 5, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3415) wifi:security: WPA2-PSK, phy: bgn, rssi: -31
+I (3425) wifi:pm start, type: 1
+
+I (3425) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3505) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4435) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4435) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4545) example_common: Connected to example_netif_sta[0m
+[0;32mI (4555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (4555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (4565) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4575) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4585) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4595) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4605) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4615) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4635) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4645) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4655) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4665) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4675) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4685) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4695) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4705) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4715) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4725) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4735) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4745) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;31mE (4745) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4765) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4775) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4785) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4795) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4805) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4815) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4825) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4835) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4845) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4855) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4865) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4875) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4885) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4895) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4905) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4915) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4925) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4935) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4945) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4955) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4965) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4975) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4985) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5005) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5015) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5025) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5035) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5045) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5055) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5065) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5075) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5085) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5095) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5105) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5115) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5125) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5135) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5145) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5155) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5165) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5175) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5185) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5195) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5205) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5215) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5225) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5235) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5245) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;32mI (5255) main_task: Returned from app_main()[0m
+[0;31mE (5255) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5275) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5285) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5295) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5305) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5315) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5325) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5335) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5345) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5355) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5365) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5375) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5385) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5395) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5405) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5415) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5425) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5435) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5445) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5455) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5465) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5485) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5495) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5505) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5515) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5525) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5535) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5545) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5555) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5565) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5575) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5585) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5595) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5605) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5615) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5625) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5635) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5645) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5655) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5665) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5675) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5685) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5695) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5705) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5715) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5725) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5735) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5745) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5755) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5765) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5775) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5795) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5805) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5815) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5825) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5835) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5845) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5855) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5865) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5875) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5885) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5895) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5905) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5915) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5925) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5935) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5945) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5955) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5965) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5975) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5985) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5995) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6005) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6015) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6025) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6035) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6045) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6055) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6065) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6075) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6085) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6105) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6115) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6125) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6135) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6145) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6155) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6165) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6175) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6185) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6195) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6205) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6215) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6225) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6235) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6245) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6255) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6265) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6275) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;32mI (6285) UART_HTTP: Received: ec:30:b3:7f:d6:1e��[0m
+
+assert failed: block_trim_free tlsf.c:496 (block_is_free(block) && "block must be free")
+
+
+Backtrace: 0x400818da:0x3ffc8b20 0x40089f59:0x3ffc8b40 0x40091909:0x3ffc8b60 0x4008f984:0x3ffc8c80 0x4008f2ad:0x3ffc8ca0 0x400820d5:0x3ffc8cc0 0x40082130:0x3ffc8ce0 0x40082165:0x3ffc8d00 0x40091919:0x3ffc8d20 0x400e207d:0x3ffc8d40 0x400f185d:0x3ffc8d60 0x400f18c9:0x3ffc8d80 0x400f2071:0x3ffc8da0 0x400dfa65:0x3ffc8de0 0x400d6d98:0x3ffc8e30 0x400d705c:0x3ffc8ee0 0x4008ab21:0x3ffc8fd0
+
+
+
+
+ELF file SHA256: d7db1a37e
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244f8h (148728) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00034520 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00038134 vaddr=40080000 size=07ee4h ( 32484) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88510h (558352) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c8538 vaddr=40087ee4 size=0f6d0h ( 63184) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (431) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  d7db1a37e...[0m
+[0;32mI (447) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (457) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (486) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3405) wifi:state: auth -> assoc (0)
+I (3405) wifi:state: assoc -> run (10)
+I (3415) wifi:connected with ESP, aid = 6, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3415) wifi:security: WPA2-PSK, phy: bgn, rssi: -31
+I (3425) wifi:pm start, type: 1
+
+I (3425) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3505) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4435) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4435) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4545) example_common: Connected to example_netif_sta[0m
+[0;32mI (4555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (4555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (4565) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4575) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4585) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4595) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4605) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4625) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4635) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4645) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4655) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4665) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4675) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4685) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4695) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4705) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4715) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4725) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4735) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4745) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4755) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4765) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4775) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4785) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4795) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4805) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4815) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4825) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4835) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4845) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4855) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4865) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4875) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4885) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4895) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4905) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4915) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4925) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4945) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4945) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;31mE (4955) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4965) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4975) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (4985) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5005) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5015) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5025) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5035) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5045) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5055) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5065) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5075) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5085) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5095) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5105) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5115) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5125) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5135) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5145) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5155) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5165) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5175) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5185) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5195) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5205) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5215) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5225) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5235) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5245) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5255) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5265) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5275) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5285) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5295) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5315) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5325) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5335) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5345) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;32mI (5345) main_task: Returned from app_main()[0m
+[0;31mE (5355) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5365) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5375) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5385) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5395) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5405) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5415) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5425) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5435) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5445) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5455) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5475) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5485) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5495) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5505) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5515) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5525) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5535) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5545) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5555) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5565) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5575) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5585) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5595) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5605) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5615) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5625) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5635) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5645) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5655) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5665) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5675) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5685) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5695) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5705) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5715) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5725) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5735) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5745) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5755) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5765) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5785) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5795) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5805) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5815) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5825) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5835) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5845) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5855) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5865) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5875) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5885) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5895) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5905) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5915) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5925) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5935) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5945) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5955) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5965) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5975) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5985) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (5995) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6005) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6015) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6025) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6035) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6045) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6055) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6065) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6075) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6085) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6105) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6115) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6125) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6135) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6145) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6155) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6165) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6175) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6185) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6195) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6205) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6215) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6225) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6235) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6245) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6255) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6265) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6275) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6285) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6295) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6305) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6315) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6325) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6335) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6345) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6355) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6365) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6375) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6385) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6395) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6415) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6425) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6435) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6445) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6455) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6465) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6475) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6485) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6495) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6505) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6515) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6525) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6535) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6545) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6555) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6565) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6575) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6585) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6595) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6605) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6615) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6625) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6635) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6645) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6655) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6665) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6675) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6685) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6695) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6705) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6725) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6735) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6745) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6755) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6765) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6775) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6785) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6795) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6805) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6815) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6825) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6835) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6845) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6855) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6865) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6875) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6885) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6895) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6905) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6915) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6925) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6935) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6945) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6955) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6965) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6975) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6985) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (6995) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7005) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7015) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7025) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7045) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7055) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7065) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7075) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7085) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7095) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7105) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7115) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7125) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7135) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7145) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7155) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7165) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7175) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7185) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+I (7195) wifi:[0;31mE (7195) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+<ba-add>idx:0 (ifx:0, f6:a4:75:d3:08:a6), tid:0, ssn:6, winSize:64[0;31mE (7205) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+
+[0;31mE (7225) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7235) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7245) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7255) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7265) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7275) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7285) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7295) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7305) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7315) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7325) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7335) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7345) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7355) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7365) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7375) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7385) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7395) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7405) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7415) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7425) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7435) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7455) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7465) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7475) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7485) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7495) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7505) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7515) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7525) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7535) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7545) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7555) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7565) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7575) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7585) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7595) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7605) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7615) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7625) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7635) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7645) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7655) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7665) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7675) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7685) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7695) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7705) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7715) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7725) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7735) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7745) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7765) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7775) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7785) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7795) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7805) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7815) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7825) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7835) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7845) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7855) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7865) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7875) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7885) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7895) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7905) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7915) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7925) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7935) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7945) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7955) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7965) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7975) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7985) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (7995) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8005) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8015) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8025) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8035) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8045) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8055) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8065) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m
+[0;31mE (8085) UART_HTTP: --------------aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa----------------------------[0m

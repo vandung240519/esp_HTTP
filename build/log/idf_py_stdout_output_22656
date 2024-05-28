@@ -1,0 +1,1247 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  0e331c1f9...[0m
+[0;32mI (448) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (475) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (725) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3395) wifi:state: auth -> assoc (0)
+I (3405) wifi:state: assoc -> run (10)
+I (3425) wifi:connected with ESP, aid = 2, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3425) wifi:security: WPA2-PSK, phy: bgn, rssi: -27
+I (3425) wifi:pm start, type: 1
+
+I (3425) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3515) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4435) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4435) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4545) example_common: Connected to example_netif_sta[0m
+[0;32mI (4555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (4555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (4575) UART_HTTP: *************************[0m
+[0;31mE (4575) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (4585) main_task: Returned from app_main()[0m
+[0;31mE (7575) UART_HTTP: *************************[0m
+[0;32mI (10575) UART_HTTP: Received: ec:30:b3:7f:d6:1e����ӏ�����"��>۝70F���e�o��؜fr띲�Z��>�	��A�奙)��Q���?��Ã�S>�n;��������V��]	`�ʊ�T�e:�ޅh����ҙ�,�+�������C�m��Z��\����#a��٢�����x[0m
+[0;31mE (10575) UART_HTTP: Request buffer overflowed[0m
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008f912  PS      : 0x00060133  A0      : 0x8008f2b0  A1      : 0x3ffc8c80  
+A2      : 0x3ffafcf0  A3      : 0x0000000c  A4      : 0x0000000a  A5      : 0x0000000c  
+A6      : 0x3ffc8cf0  A7      : 0x3ffae6f4  A8      : 0x00000007  A9      : 0x229116ca  
+A10     : 0x00000003  A11     : 0xeacbf78f  A12     : 0x00000008  A13     : 0x3ffae718  
+A14     : 0x00000057  A15     : 0x0000cdcd  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0xeacbf79b  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4008f90f:0x3ffc8c80 0x4008f2ad:0x3ffc8ca0 0x400820d5:0x3ffc8cc0 0x40082130:0x3ffc8ce0 0x40082165:0x3ffc8d00 0x40091919:0x3ffc8d20 0x400e2081:0x3ffc8d40 0x400f1861:0x3ffc8d60 0x400f18cd:0x3ffc8d80 0x400f2075:0x3ffc8da0 0x400dfa69:0x3ffc8de0 0x400d6d98:0x3ffc8e30 0x400d7060:0x3ffc8ee0 0x4008ab21:0x3ffc8fd0
+
+
+
+
+ELF file SHA256: 0e331c1f9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  0e331c1f9...[0m
+[0;32mI (447) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (735) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3405) wifi:state: auth -> assoc (0)
+I (3415) wifi:state: assoc -> run (10)
+I (3425) wifi:connected with ESP, aid = 3, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3425) wifi:security: WPA2-PSK, phy: bgn, rssi: -28
+I (3425) wifi:pm start, type: 1
+
+I (3425) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3475) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4435) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4435) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4545) example_common: Connected to example_netif_sta[0m
+[0;32mI (4555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (4555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (4575) UART_HTTP: *************************[0m
+[0;31mE (4575) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (4585) main_task: Returned from app_main()[0m
+I (5615) wifi:<ba-add>idx:0 (ifx:0, f6:a4:75:d3:08:a6), tid:0, ssn:5, winSize:64
+[0;31mE (7575) UART_HTTP: *************************[0m
+[0;31mE (10575) UART_HTTP: *************************[0m
+[0;31mE (13575) UART_HTTP: *************************[0m
+[0;31mE (16575) UART_HTTP: *************************[0m
+[0;31mE (19575) UART_HTTP: *************************[0m
+[0;31mE (22575) UART_HTTP: *************************[0m
+[0;31mE (25575) UART_HTTP: *************************[0m
+[0;31mE (28575) UART_HTTP: *************************[0m
+[0;31mE (31575) UART_HTTP: *************************[0m
+[0;31mE (34575) UART_HTTP: *************************[0m
+[0;31mE (37575) UART_HTTP: *************************[0m
+[0;31mE (40575) UART_HTTP: *************************[0m
+[0;31mE (43575) UART_HTTP: *************************[0m
+[0;31mE (46575) UART_HTTP: *************************[0m
+[0;31mE (49575) UART_HTTP: *************************[0m
+[0;31mE (52575) UART_HTTP: *************************[0m
+[0;31mE (55575) UART_HTTP: *************************[0m
+[0;31mE (58575) UART_HTTP: *************************[0m
+[0;31mE (61575) UART_HTTP: *************************[0m
+[0;31mE (64575) UART_HTTP: *************************[0m
+[0;31mE (67575) UART_HTTP: *************************[0m
+[0;31mE (70575) UART_HTTP: *************************[0m
+[0;31mE (73575) UART_HTTP: *************************[0m
+[0;31mE (76575) UART_HTTP: *************************[0m
+[0;31mE (79575) UART_HTTP: *************************[0m
+[0;31mE (82575) UART_HTTP: *************************[0m
+[0;31mE (85575) UART_HTTP: *************************[0m
+[0;31mE (88575) UART_HTTP: *************************[0m
+[0;32mI (91575) UART_HTTP: Received: ec:30:b3:7f:d6:1e����ӏ�����"��>۝70F���e�o��؜fr띲�Z��>�	��A�奙)��Q���?��Ã�S>�n;��������V��]	`�ʊ�T�e:�ޅh����ҙ�,�+�������C�m��Z��\����#a��٢�����x[0m
+[0;31mE (91575) UART_HTTP: Request buffer overflowed[0m
+[0;32mI (91585) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (91585) UART_HTTP: ... allocated socket[0m
+[0;32mI (91635) UART_HTTP: ... connected[0m
+[0;32mI (91645) UART_HTTP: ... socket send success[0m
+[0;32mI (91645) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (91645) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (96655) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008f600  PS      : 0x00060733  A0      : 0x8008f233  A1      : 0x3ffc8e60  
+A2      : 0x3ffb823c  A3      : 0x3ffc64c8  A4      : 0x3ffc8df0  A5      : 0x0000000c  
+A6      : 0x00000000  A7      : 0x3ffc64c0  A8      : 0xa804e316  A9      : 0x0000001a  
+A10     : 0x3ffc64dc  A11     : 0x3ffc64dc  A12     : 0x0000000d  A13     : 0x229116ca  
+A14     : 0x00000004  A15     : 0x0000cdcd  SAR     : 0x0000001c  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0xa804e31e  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4008f5fd:0x3ffc8e60 0x4008f230:0x3ffc8e80 0x400821f2:0x3ffc8ea0 0x40091939:0x3ffc8ec0 0x400d7065:0x3ffc8ee0 0x4008ab21:0x3ffc8fd0
+
+
+
+
+ELF file SHA256: 0e331c1f9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  0e331c1f9...[0m
+[0;32mI (447) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3405) wifi:state: auth -> assoc (0)
+I (3405) wifi:state: assoc -> run (10)
+I (3425) wifi:connected with ESP, aid = 4, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3425) wifi:security: WPA2-PSK, phy: bgn, rssi: -28
+I (3425) wifi:pm start, type: 1
+
+I (3425) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3515) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4435) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4435) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4545) example_common: Connected to example_netif_sta[0m
+[0;32mI (4555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (4555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (4575) UART_HTTP: *************************[0m
+[0;31mE (4575) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (4585) main_task: Returned from app_main()[0m
+[0;31mE (7575) UART_HTTP: *************************[0m
+I (8535) wifi:<ba-add>idx:0 (ifx:0, f6:a4:75:d3:08:a6), tid:0, ssn:7, winSize:64
+[0;31mE (10575) UART_HTTP: *************************[0m
+[0;31mE (13575) UART_HTTP: *************************[0m
+[0;31mE (16575) UART_HTTP: *************************[0m
+[0;31mE (19575) UART_HTTP: *************************[0m
+[0;31mE (22575) UART_HTTP: *************************[0m
+[0;31mE (25575) UART_HTTP: *************************[0m
+[0;31mE (28575) UART_HTTP: *************************[0m
+[0;31mE (31575) UART_HTTP: *************************[0m
+[0;31mE (34575) UART_HTTP: *************************[0m
+[0;31mE (37575) UART_HTTP: *************************[0m
+[0;31mE (40575) UART_HTTP: *************************[0m
+[0;32mI (43575) UART_HTTP: Received: ec:30:b3:7f:d6:1e�>�	��A����)��Q翱?��Ã�S>�n;��������V��]	`�ʊ�T�e:�ޅh����ҙ�,�+�������C�m��Z��\����#a��٢�����x[0m
+[0;31mE (43575) UART_HTTP: Request buffer overflowed[0m
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008f912  PS      : 0x00060b33  A0      : 0x8008f2b0  A1      : 0x3ffc8cb0  
+A2      : 0x3ffafcf0  A3      : 0x0000000c  A4      : 0x0000000a  A5      : 0x0000000c  
+A6      : 0x3ffc8d20  A7      : 0x3ffae6f4  A8      : 0x00000002  A9      : 0xa42999a5  
+A10     : 0x00000003  A11     : 0xe592411a  A12     : 0x00000008  A13     : 0x3ffae718  
+A14     : 0x00000057  A15     : 0x0000cdcd  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0xe5924126  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4008f90f:0x3ffc8cb0 0x4008f2ad:0x3ffc8cd0 0x400820d5:0x3ffc8cf0 0x40082130:0x3ffc8d10 0x40082165:0x3ffc8d30 0x40091919:0x3ffc8d50 0x400e2081:0x3ffc8d70 0x400f1861:0x3ffc8d90 0x400f18cd:0x3ffc8db0 0x400f2075:0x3ffc8dd0 0x400dfa69:0x3ffc8e10 0x400d6d98:0x3ffc8e60 0x400d7060:0x3ffc8f10 0x4008ab21:0x3ffc9000
+
+
+
+
+ELF file SHA256: 0e331c1f9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:43:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=244b8h (148664) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000344e0 vaddr=3ffb0000 size=03c0ch ( 15372) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000380f4 vaddr=40080000 size=07f24h ( 32548) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=88514h (558356) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c853c vaddr=40087f24 size=0f690h ( 63120) load[0m
+[0;32mI (403) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (403) boot: Disabling RNG early entropy source...[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (423) cpu_start: Pro cpu start user code[0m
+[0;32mI (423) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (423) cpu_start: Application information:[0m
+[0;32mI (426) cpu_start: Project name:     http_request[0m
+[0;32mI (432) cpu_start: App version:      1[0m
+[0;32mI (436) cpu_start: Compile time:     May 27 2024 16:43:32[0m
+[0;32mI (442) cpu_start: ELF file SHA256:  0e331c1f9...[0m
+[0;32mI (447) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (453) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (458) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (462) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (480) heap_init: At 3FFB8228 len 00027DD8 (159 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (493) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (507) spi_flash: detected chip: generic[0m
+[0;32mI (510) spi_flash: flash io: dio[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (545) example_connect: Start example_connect.[0m
+I (555) wifi:wifi driver task: 3ffbfd68, prio:23, stack:6656, core=0
+I (555) wifi:wifi firmware version: a9f5b59
+I (555) wifi:wifi certification version: v7.0
+I (555) wifi:config NVS flash: enabled
+I (555) wifi:config nano formating: disabled
+I (565) wifi:Init data frame dynamic rx buffer num: 32
+I (565) wifi:Init static rx mgmt buffer num: 5
+I (565) wifi:Init management short buffer num: 32
+I (575) wifi:Init dynamic tx buffer num: 32
+I (575) wifi:Init static rx buffer size: 1600
+I (585) wifi:Init static rx buffer num: 10
+I (585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (595) wifi_init: rx ba win: 6[0m
+[0;32mI (595) wifi_init: tcpip mbox: 32[0m
+[0;32mI (595) wifi_init: udp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp mbox: 6[0m
+[0;32mI (605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (615) wifi_init: tcp mss: 1440[0m
+[0;32mI (615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (625) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (625) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (725) wifi:mode : sta (d8:bc:38:e5:cc:c0)
+I (725) wifi:enable tsf
+[0;32mI (725) example_connect: Connecting to ESP...[0m
+[0;32mI (735) example_connect: Waiting for IP(s)[0m
+I (3145) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3395) wifi:state: init -> auth (b0)
+I (3435) wifi:state: auth -> assoc (0)
+I (3435) wifi:state: assoc -> run (10)
+I (3455) wifi:connected with ESP, aid = 5, channel 1, BW20, bssid = f6:a4:75:d3:08:a6
+I (3455) wifi:security: WPA2-PSK, phy: bgn, rssi: -24
+I (3455) wifi:pm start, type: 1
+
+I (3455) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3555) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4465) esp_netif_handlers: example_netif_sta ip: 192.168.137.47, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4465) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.47[0m
+[0;32mI (4545) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4545) example_common: Connected to example_netif_sta[0m
+[0;32mI (4555) example_common: - IPv4 address: 192.168.137.47,[0m
+[0;32mI (4555) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee5:ccc0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;31mE (4565) UART_HTTP: *************************[0m
+[0;31mE (4575) UART_HTTP: --------------6666666666666666666666----------------------------[0m
+[0;32mI (4585) main_task: Returned from app_main()[0m
+I (6315) wifi:<ba-add>idx:0 (ifx:0, f6:a4:75:d3:08:a6), tid:0, ssn:5, winSize:64
+[0;31mE (7575) UART_HTTP: *************************[0m
+[0;31mE (10575) UART_HTTP: *************************[0m
+[0;31mE (13575) UART_HTTP: *************************[0m
+[0;32mI (16575) UART_HTTP: Received: cc:47:40:01:35:46[0m
+[0;32mI (16575) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (16575) UART_HTTP: ... allocated socket[0m
+[0;32mI (16595) UART_HTTP: ... connected[0m
+[0;32mI (16595) UART_HTTP: ... socket send success[0m
+[0;32mI (16595) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (16595) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (21605) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (21605) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (24605) UART_HTTP: *************************[0m
+[0;31mE (27605) UART_HTTP: *************************[0m
+[0;32mI (30605) UART_HTTP: Received: cc:47:40:01:35:46[0m
+[0;32mI (30605) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (30605) UART_HTTP: ... allocated socket[0m
+[0;32mI (30615) UART_HTTP: ... connected[0m
+[0;32mI (30615) UART_HTTP: ... socket send success[0m
+[0;32mI (30615) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (30625) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (35625) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (35625) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (38625) UART_HTTP: *************************[0m
+[0;31mE (41625) UART_HTTP: *************************[0m
+[0;31mE (44625) UART_HTTP: *************************[0m
+[0;32mI (47625) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (47625) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (47625) UART_HTTP: ... allocated socket[0m
+[0;32mI (47675) UART_HTTP: ... connected[0m
+[0;32mI (47675) UART_HTTP: ... socket send success[0m
+[0;32mI (47685) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (47685) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (52695) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (52695) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (55695) UART_HTTP: *************************[0m
+[0;31mE (58695) UART_HTTP: *************************[0m
+[0;32mI (61695) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (61695) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (61695) UART_HTTP: ... allocated socket[0m
+[0;32mI (61705) UART_HTTP: ... connected[0m
+[0;32mI (61705) UART_HTTP: ... socket send success[0m
+[0;32mI (61715) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (61715) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (66725) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (66725) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (69725) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (69725) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (69725) UART_HTTP: ... allocated socket[0m
+[0;32mI (69745) UART_HTTP: ... connected[0m
+[0;32mI (69745) UART_HTTP: ... socket send success[0m
+[0;32mI (69745) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (69745) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (74755) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (74755) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (77755) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (77755) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (77755) UART_HTTP: ... allocated socket[0m
+[0;32mI (77785) UART_HTTP: ... connected[0m
+[0;32mI (77785) UART_HTTP: ... socket send success[0m
+[0;32mI (77785) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (77785) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (82795) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (82795) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (85795) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (85795) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (85795) UART_HTTP: ... allocated socket[0m
+[0;32mI (85805) UART_HTTP: ... connected[0m
+[0;32mI (85805) UART_HTTP: ... socket send success[0m
+[0;32mI (85805) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (85815) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (90815) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (90815) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (93815) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (93815) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (93815) UART_HTTP: ... allocated socket[0m
+[0;32mI (93885) UART_HTTP: ... connected[0m
+[0;32mI (93885) UART_HTTP: ... socket send success[0m
+[0;32mI (93885) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (93885) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (98895) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (98895) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (101895) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (101895) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (101895) UART_HTTP: ... allocated socket[0m
+[0;32mI (102005) UART_HTTP: ... connected[0m
+[0;32mI (102005) UART_HTTP: ... socket send success[0m
+[0;32mI (102005) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (102005) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (107015) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (107015) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (110015) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (110015) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (110015) UART_HTTP: ... allocated socket[0m
+[0;32mI (110035) UART_HTTP: ... connected[0m
+[0;32mI (110045) UART_HTTP: ... socket send success[0m
+[0;32mI (110045) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (110045) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (115055) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (115055) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (118055) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (118055) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (118055) UART_HTTP: ... allocated socket[0m
+[0;32mI (118075) UART_HTTP: ... connected[0m
+[0;32mI (118075) UART_HTTP: ... socket send success[0m
+[0;32mI (118075) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (118075) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (123085) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (123085) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (126085) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (126085) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (126085) UART_HTTP: ... allocated socket[0m
+[0;32mI (126115) UART_HTTP: ... connected[0m
+[0;32mI (126115) UART_HTTP: ... socket send success[0m
+[0;32mI (126115) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (126125) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (131135) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (131135) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (134135) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (134135) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (134135) UART_HTTP: ... allocated socket[0m
+[0;31mE (134155) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (138155) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (138155) UART_HTTP: ... allocated socket[0m
+[0;31mE (138195) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (142195) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (142195) UART_HTTP: ... allocated socket[0m
+[0;31mE (142195) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (146195) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (146195) UART_HTTP: ... allocated socket[0m
+[0;31mE (146195) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (150195) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (150195) UART_HTTP: ... allocated socket[0m
+[0;31mE (150235) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (154235) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (154235) UART_HTTP: ... allocated socket[0m
+[0;31mE (154275) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (158275) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (158275) UART_HTTP: ... allocated socket[0m
+[0;32mI (158275) UART_HTTP: ... connected[0m
+[0;32mI (158275) UART_HTTP: ... socket send success[0m
+[0;32mI (158285) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (158285) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (158295) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (158305) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (161315) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (161315) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (161315) UART_HTTP: ... allocated socket[0m
+[0;32mI (161345) UART_HTTP: ... connected[0m
+[0;32mI (161345) UART_HTTP: ... socket send success[0m
+[0;32mI (161345) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (161345) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (161365) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (161375) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (164375) UART_HTTP: *************************[0m
+[0;32mI (167375) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (167375) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (167375) UART_HTTP: ... allocated socket[0m
+[0;32mI (167385) UART_HTTP: ... connected[0m
+[0;32mI (167385) UART_HTTP: ... socket send success[0m
+[0;32mI (167385) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (167395) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (167405) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (167415) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (170425) UART_HTTP: *************************[0m
+[0;32mI (173425) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (173425) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (173425) UART_HTTP: ... allocated socket[0m
+[0;32mI (173435) UART_HTTP: ... connected[0m
+[0;32mI (173435) UART_HTTP: ... socket send success[0m
+[0;32mI (173435) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (173445) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (173455) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (173465) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (176475) UART_HTTP: Received: cc:47:40:01:35:46[0m
+[0;32mI (176475) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (176475) UART_HTTP: ... allocated socket[0m
+[0;32mI (176495) UART_HTTP: ... connected[0m
+[0;32mI (176505) UART_HTTP: ... socket send success[0m
+[0;32mI (176505) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (176505) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (176515) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (176525) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (179535) UART_HTTP: *************************[0m
+[0;32mI (182535) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (182535) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (182535) UART_HTTP: ... allocated socket[0m
+[0;32mI (182545) UART_HTTP: ... connected[0m
+[0;32mI (182545) UART_HTTP: ... socket send success[0m
+[0;32mI (182545) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (182555) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (182565) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (182575) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (185585) UART_HTTP: *************************[0m
+[0;32mI (188585) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (188585) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (188585) UART_HTTP: ... allocated socket[0m
+[0;32mI (188595) UART_HTTP: ... connected[0m
+[0;32mI (188595) UART_HTTP: ... socket send success[0m
+[0;32mI (188595) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (188605) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (188615) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (188625) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (191635) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (191635) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (191635) UART_HTTP: ... allocated socket[0m
+[0;32mI (191675) UART_HTTP: ... connected[0m
+[0;32mI (191675) UART_HTTP: ... socket send success[0m
+[0;32mI (191675) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (191675) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (191685) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (191695) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (194705) UART_HTTP: *************************[0m
+[0;32mI (197705) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (197705) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (197705) UART_HTTP: ... allocated socket[0m
+[0;32mI (197715) UART_HTTP: ... connected[0m
+[0;32mI (197715) UART_HTTP: ... socket send success[0m
+[0;32mI (197715) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (197725) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (197735) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (197745) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (200755) UART_HTTP: *************************[0m
+[0;32mI (203755) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (203755) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (203755) UART_HTTP: ... allocated socket[0m
+[0;32mI (203765) UART_HTTP: ... connected[0m
+[0;32mI (203765) UART_HTTP: ... socket send success[0m
+[0;32mI (203765) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (203775) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (203785) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (203795) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (206805) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (206805) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (206805) UART_HTTP: ... allocated socket[0m
+[0;32mI (206835) UART_HTTP: ... connected[0m
+[0;32mI (206835) UART_HTTP: ... socket send success[0m
+[0;32mI (206835) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (206835) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (206845) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (206855) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (209865) UART_HTTP: *************************[0m
+[0;32mI (212865) UART_HTTP: Received: cc:47:40:01:35:46[0m
+[0;32mI (212865) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (212865) UART_HTTP: ... allocated socket[0m
+[0;32mI (212875) UART_HTTP: ... connected[0m
+[0;32mI (212875) UART_HTTP: ... socket send success[0m
+[0;32mI (212875) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (212885) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (212895) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (212905) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (215915) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (215915) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (215915) UART_HTTP: ... allocated socket[0m
+[0;32mI (215935) UART_HTTP: ... connected[0m
+[0;32mI (215945) UART_HTTP: ... socket send success[0m
+[0;32mI (215945) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (215945) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (215975) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (215975) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (218975) UART_HTTP: *************************[0m
+[0;32mI (221975) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (221975) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (221975) UART_HTTP: ... allocated socket[0m
+[0;32mI (221995) UART_HTTP: ... connected[0m
+[0;32mI (221995) UART_HTTP: ... socket send success[0m
+[0;32mI (221995) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (221995) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (222015) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (222015) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (225025) UART_HTTP: *************************[0m
+[0;32mI (228025) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (228025) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (228025) UART_HTTP: ... allocated socket[0m
+[0;32mI (228035) UART_HTTP: ... connected[0m
+[0;32mI (228035) UART_HTTP: ... socket send success[0m
+[0;32mI (228035) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (228045) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (228055) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (228065) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (231075) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (231075) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (231075) UART_HTTP: ... allocated socket[0m
+[0;32mI (231085) UART_HTTP: ... connected[0m
+[0;32mI (231085) UART_HTTP: ... socket send success[0m
+[0;32mI (231085) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (231095) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (231105) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (231115) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (234125) UART_HTTP: *************************[0m
+[0;32mI (237125) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (237125) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (237125) UART_HTTP: ... allocated socket[0m
+[0;32mI (237135) UART_HTTP: ... connected[0m
+[0;32mI (237135) UART_HTTP: ... socket send success[0m
+[0;32mI (237135) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (237145) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (237155) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (237165) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (240175) UART_HTTP: *************************[0m
+[0;32mI (243175) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (243175) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (243175) UART_HTTP: ... allocated socket[0m
+[0;31mE (243195) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (247195) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (247195) UART_HTTP: ... allocated socket[0m
+[0;32mI (247195) UART_HTTP: ... connected[0m
+[0;32mI (247195) UART_HTTP: ... socket send success[0m
+[0;32mI (247205) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (247205) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (252215) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (252215) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (255215) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (255215) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (255215) UART_HTTP: ... allocated socket[0m
+[0;32mI (255245) UART_HTTP: ... connected[0m
+[0;32mI (255245) UART_HTTP: ... socket send success[0m
+[0;32mI (255255) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (255255) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (260265) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (260265) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (263265) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (263265) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (263265) UART_HTTP: ... allocated socket[0m
+[0;32mI (263275) UART_HTTP: ... connected[0m
+[0;32mI (263275) UART_HTTP: ... socket send success[0m
+[0;32mI (263275) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (263285) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (268285) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (268285) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (271285) UART_HTTP: Received: cc:47:40:01:35:46[0m
+[0;32mI (271285) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (271285) UART_HTTP: ... allocated socket[0m
+[0;32mI (271445) UART_HTTP: ... connected[0m
+[0;32mI (271445) UART_HTTP: ... socket send success[0m
+[0;32mI (271455) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (271455) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (276465) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (276465) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (279465) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (279465) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (279465) UART_HTTP: ... allocated socket[0m
+[0;32mI (279515) UART_HTTP: ... connected[0m
+[0;32mI (279515) UART_HTTP: ... socket send success[0m
+[0;32mI (279515) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (279525) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (284525) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (284525) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (287525) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (287525) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (287525) UART_HTTP: ... allocated socket[0m
+[0;32mI (287535) UART_HTTP: ... connected[0m
+[0;32mI (287535) UART_HTTP: ... socket send success[0m
+[0;32mI (287535) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (287545) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (292545) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (292545) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (295545) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (295545) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (295545) UART_HTTP: ... allocated socket[0m
+[0;32mI (295595) UART_HTTP: ... connected[0m
+[0;32mI (295595) UART_HTTP: ... socket send success[0m
+[0;32mI (295595) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (295605) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (300605) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (300605) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (303605) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (303605) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (303605) UART_HTTP: ... allocated socket[0m
+[0;32mI (303615) UART_HTTP: ... connected[0m
+[0;32mI (303615) UART_HTTP: ... socket send success[0m
+[0;32mI (303615) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (303625) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (308625) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (308625) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (311625) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (311625) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (311625) UART_HTTP: ... allocated socket[0m
+[0;32mI (311675) UART_HTTP: ... connected[0m
+[0;32mI (311675) UART_HTTP: ... socket send success[0m
+[0;32mI (311675) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (311675) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (316685) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (316685) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (319685) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (319685) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (319685) UART_HTTP: ... allocated socket[0m
+[0;32mI (319695) UART_HTTP: ... connected[0m
+[0;32mI (319695) UART_HTTP: ... socket send success[0m
+[0;32mI (319695) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (319705) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (324705) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (324705) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (327705) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (327705) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (327705) UART_HTTP: ... allocated socket[0m
+[0;32mI (327745) UART_HTTP: ... connected[0m
+[0;32mI (327755) UART_HTTP: ... socket send success[0m
+[0;32mI (327755) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (327755) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (332765) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (332765) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (335765) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (335765) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (335765) UART_HTTP: ... allocated socket[0m
+[0;32mI (335775) UART_HTTP: ... connected[0m
+[0;32mI (335775) UART_HTTP: ... socket send success[0m
+[0;32mI (335775) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (335785) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (340785) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (340785) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (343785) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (343785) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (343785) UART_HTTP: ... allocated socket[0m
+[0;32mI (343825) UART_HTTP: ... connected[0m
+[0;32mI (343835) UART_HTTP: ... socket send success[0m
+[0;32mI (343835) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (343835) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (348845) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (348845) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (351845) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (351845) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (351845) UART_HTTP: ... allocated socket[0m
+[0;32mI (351855) UART_HTTP: ... connected[0m
+[0;32mI (351855) UART_HTTP: ... socket send success[0m
+[0;32mI (351855) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (351865) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (356865) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (356865) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (359865) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (359865) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (359865) UART_HTTP: ... allocated socket[0m
+[0;32mI (359905) UART_HTTP: ... connected[0m
+[0;32mI (359905) UART_HTTP: ... socket send success[0m
+[0;32mI (359905) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (359905) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (364915) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (364915) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (367915) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (367915) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (367915) UART_HTTP: ... allocated socket[0m
+[0;32mI (367925) UART_HTTP: ... connected[0m
+[0;32mI (367925) UART_HTTP: ... socket send success[0m
+[0;32mI (367925) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (367935) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (368525) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (368525) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (371525) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (371525) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (371525) UART_HTTP: ... allocated socket[0m
+[0;31mE (371575) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (375585) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (375585) UART_HTTP: ... allocated socket[0m
+[0;31mE (375585) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (379585) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (379585) UART_HTTP: ... allocated socket[0m
+[0;31mE (379585) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (383585) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (383585) UART_HTTP: ... allocated socket[0m
+[0;31mE (383585) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (387585) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (387585) UART_HTTP: ... allocated socket[0m
+[0;31mE (387595) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (391595) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (391595) UART_HTTP: ... allocated socket[0m
+[0;32mI (391595) UART_HTTP: ... connected[0m
+[0;32mI (391595) UART_HTTP: ... socket send success[0m
+[0;32mI (391605) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (391605) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (391645) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (391645) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;32mI (394655) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (394655) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (394655) UART_HTTP: ... allocated socket[0m
+[0;32mI (394665) UART_HTTP: ... connected[0m
+[0;32mI (394665) UART_HTTP: ... socket send success[0m
+[0;32mI (394665) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (394675) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (394685) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (394695) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (397705) UART_HTTP: *************************[0m
+[0;32mI (400705) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (400705) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (400705) UART_HTTP: ... allocated socket[0m
+[0;32mI (400715) UART_HTTP: ... connected[0m
+[0;32mI (400715) UART_HTTP: ... socket send success[0m
+[0;32mI (400715) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (400725) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (400765) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (400765) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (403775) UART_HTTP: *************************[0m
+[0;31mE (406775) UART_HTTP: *************************[0m
+[0;31mE (409775) UART_HTTP: *************************[0m
+[0;32mI (412775) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (412775) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (412775) UART_HTTP: ... allocated socket[0m
+[0;32mI (412785) UART_HTTP: ... connected[0m
+[0;32mI (412785) UART_HTTP: ... socket send success[0m
+[0;32mI (412785) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (412795) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (412805) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (412815) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (415825) UART_HTTP: *************************[0m
+[0;31mE (418825) UART_HTTP: *************************[0m
+[0;32mI (421825) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (421825) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (421825) UART_HTTP: ... allocated socket[0m
+[0;32mI (421855) UART_HTTP: ... connected[0m
+[0;32mI (421855) UART_HTTP: ... socket send success[0m
+[0;32mI (421855) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (421865) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (421875) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (421885) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (424895) UART_HTTP: *************************[0m
+[0;31mE (427895) UART_HTTP: *************************[0m
+[0;32mI (430895) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (430895) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (430895) UART_HTTP: ... allocated socket[0m
+[0;32mI (430905) UART_HTTP: ... connected[0m
+[0;32mI (430905) UART_HTTP: ... socket send success[0m
+[0;32mI (430905) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (430915) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (430925) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (430935) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (433945) UART_HTTP: *************************[0m
+[0;31mE (436945) UART_HTTP: *************************[0m
+[0;31mE (439945) UART_HTTP: *************************[0m
+[0;32mI (442945) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (442945) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (442945) UART_HTTP: ... allocated socket[0m
+[0;32mI (442955) UART_HTTP: ... connected[0m
+[0;32mI (442955) UART_HTTP: ... socket send success[0m
+[0;32mI (442955) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (442965) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (442975) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (442985) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (445995) UART_HTTP: *************************[0m
+[0;31mE (448995) UART_HTTP: *************************[0m
+[0;32mI (451995) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (451995) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (451995) UART_HTTP: ... allocated socket[0m
+[0;32mI (452005) UART_HTTP: ... connected[0m
+[0;32mI (452005) UART_HTTP: ... socket send success[0m
+[0;32mI (452005) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (452015) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (452025) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (452035) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (455045) UART_HTTP: *************************[0m
+[0;31mE (458045) UART_HTTP: *************************[0m
+[0;32mI (461045) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (461045) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (461045) UART_HTTP: ... allocated socket[0m
+[0;31mE (461085) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (465085) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (465085) UART_HTTP: ... allocated socket[0m
+[0;32mI (465085) UART_HTTP: ... connected[0m
+[0;32mI (465095) UART_HTTP: ... socket send success[0m
+[0;32mI (465095) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (465095) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (465105) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (465115) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (468125) UART_HTTP: *************************[0m
+[0;32mI (471125) UART_HTTP: Received: cc:47:40:01:35:46[0m
+[0;32mI (471125) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (471125) UART_HTTP: ... allocated socket[0m
+[0;32mI (471135) UART_HTTP: ... connected[0m
+[0;32mI (471135) UART_HTTP: ... socket send success[0m
+[0;32mI (471135) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (471145) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (471155) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (471165) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (474175) UART_HTTP: *************************[0m
+[0;31mE (477175) UART_HTTP: *************************[0m
+[0;31mE (480175) UART_HTTP: *************************[0m
+[0;32mI (483175) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (483175) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (483175) UART_HTTP: ... allocated socket[0m
+[0;32mI (483205) UART_HTTP: ... connected[0m
+[0;32mI (483205) UART_HTTP: ... socket send success[0m
+[0;32mI (483205) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (483205) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (483215) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (483225) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (486235) UART_HTTP: *************************[0m
+[0;31mE (489235) UART_HTTP: *************************[0m
+[0;32mI (492235) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (492235) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (492235) UART_HTTP: ... allocated socket[0m
+[0;32mI (492255) UART_HTTP: ... connected[0m
+[0;32mI (492255) UART_HTTP: ... socket send success[0m
+[0;32mI (492255) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (492255) UART_HTTP: --------------22222222222222----------------------------[0m
+HTTP/1.1 400 Bad Request
+Connection: close
+
+[0;32mI (492275) UART_HTTP: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;31mE (492285) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (495285) UART_HTTP: *************************[0m
+[0;31mE (498285) UART_HTTP: *************************[0m
+[0;32mI (501285) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (501285) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (501285) UART_HTTP: ... allocated socket[0m
+[0;31mE (501355) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (505355) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (505355) UART_HTTP: ... allocated socket[0m
+[0;31mE (505525) UART_HTTP: ... socket connect failed errno=104[0m
+[0;32mI (509525) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (509525) UART_HTTP: ... allocated socket[0m
+[0;32mI (509535) UART_HTTP: ... connected[0m
+[0;32mI (509535) UART_HTTP: ... socket send success[0m
+[0;32mI (509535) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (509545) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (514545) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (514545) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (517545) UART_HTTP: *************************[0m
+[0;31mE (520545) UART_HTTP: *************************[0m
+[0;32mI (523545) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (523545) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (523545) UART_HTTP: ... allocated socket[0m
+[0;32mI (523565) UART_HTTP: ... connected[0m
+[0;32mI (523565) UART_HTTP: ... socket send success[0m
+[0;32mI (523565) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (523565) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (528575) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (528575) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (531575) UART_HTTP: *************************[0m
+[0;31mE (534575) UART_HTTP: *************************[0m
+[0;32mI (537575) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (537575) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (537575) UART_HTTP: ... allocated socket[0m
+[0;32mI (537585) UART_HTTP: ... connected[0m
+[0;32mI (537585) UART_HTTP: ... socket send success[0m
+[0;32mI (537585) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (537595) UART_HTTP: --------------22222222222222----------------------------[0m
+[0;32mI (542595) UART_HTTP: ... done reading from socket. Last read return=-1 errno=11.[0m
+[0;31mE (542595) UART_HTTP: --------------44444444444444444----------------------------[0m
+[0;31mE (545595) UART_HTTP: *************************[0m
+[0;31mE (548595) UART_HTTP: *************************[0m
+[0;32mI (551595) UART_HTTP: Received: ec:30:b3:7f:d6:1e[0m
+[0;32mI (551595) UART_HTTP: DNS lookup succeeded. IP=192.168.1.71[0m
+[0;32mI (551595) UART_HTTP: ... allocated socket[0m
+[0;32mI (551605) UART_HTTP: ... connected[0m
+[0;32mI (551605) UART_HTTP: ... socket send success[0m
+[0;32mI (551605) UART_HTTP: ... set socket receiving timeout success[0m
+[0;31mE (551615) UART_HTTP: --------------22222222222222----------------------------[0m
